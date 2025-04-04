@@ -36,6 +36,15 @@ main {
     color: var(--main);
 }
 
+section {
+    max-width: 1250px;
+    margin: 0 auto;
+}
+
+p {
+    font-size: 1.25rem;
+}
+
 .subtitle {
     color: var(--sec);
 }
