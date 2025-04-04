@@ -1,0 +1,56 @@
+.title {
+    font-size: 6rem;
+}
+
+.title-img {
+    width: 8rem;
+    height: auto;
+    object-fit: contain;
+}
+
+.title-container {
+    gap: 12px;
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: normal;
+}
+
+.links {
+    margin-top: 32px;
+    gap: 48px;
+}
+
+.link-img {
+    height: 5em;
+    object-fit: contain;
+    margin-bottom: 6px;
+}
+
+@media (width < 600px) {
+    .title {
+        font-size: 3rem;
+    }
+
+    .title-img {
+        width: 4rem;
+    }
+
+    p {
+        font-size: 1.15rem;
+    }
+
+    .links {
+        margin-top: 24px;
+        gap: 16px;
+    }
+    
+    .link-img {
+        height: 3em;
+    }
+
+    h2 {
+        font-size: 1.35rem;
+    }
+}
