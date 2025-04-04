@@ -34,7 +34,8 @@ h2 {
 }
 
 .max { 
-    width: 800px;
+    max-width: 800px;
+    padding: 24px;
 }
 
 section {
@@ -67,7 +68,7 @@ section {
     }
 }
 
-@media (width < 600px) {
+@media (width < 800px) {
     .title {
         font-size: 3rem;
     }
@@ -82,11 +83,15 @@ section {
 
     .links {
         margin-top: 24px;
-        gap: 16px;
+        gap: 4px;
     }
 
     .link-img {
         height: 3em;
+    }
+
+    .link-item {
+        max-width: 80vw;
     }
 
     h2 {
