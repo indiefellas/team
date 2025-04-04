@@ -70,15 +70,16 @@ section {
 
 @media (width < 800px) {
     .title {
-        font-size: 3rem;
+        font-size: 4rem;
     }
 
     .title-img {
-        width: 4rem;
+        width: 5rem;
+        
     }
 
     h2 {
-        font-size: 1.15rem;
+        font-size: 1.25rem;
     }
 
     .links {
@@ -96,5 +97,23 @@ section {
 
     h2 {
         font-size: 1.35rem;
+    }
+}
+
+@media (width < 450px) {
+    .title {
+        font-size: 2rem;
+    }
+
+    .title-img {
+        width: 4rem;
+    }
+
+    .link-img {
+        height: 2em;
+    }
+
+    h2 {
+        font-size: 1.15rem;
     }
 }
