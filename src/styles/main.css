@@ -64,6 +64,10 @@ a:hover {
     color: var(--main);
 }
 
+img {
+    max-width: 100%;
+}
+
 * {
     transition: all 150ms;
 }
