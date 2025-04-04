@@ -13,10 +13,16 @@
     --bg: #10101a;
     --main: #fffffe;
     --sec: #b5b5b8;
+    --blue: #5888FF;
+    --green: #A6FFB0;
 }
 
 .jua {
     font-family: 'Jua', sans-serif;
+}
+
+* {
+    scroll-behavior: smooth;
 }
 
 html,
@@ -39,10 +45,17 @@ main {
     flex-direction: column;
 }
 
+.container.wrap {
+    flex-wrap: wrap;
+}
+
 .container.center {
     justify-content: center;
     align-items: center;
     text-align: center;
+}
+
+.container.height100 {
     height: 100%;
 }
 
@@ -61,7 +74,17 @@ a {
 }
 
 a:hover {
-    color: var(--main);
+    color: var(--blue);
+    img path {
+        stroke: var(--blue) !important;
+    }
+}
+
+a:hover:nth-of-type(odd) {
+    color: var(--green);
+    img path {
+        stroke: var(--green) !important;
+    }
 }
 
 img {
