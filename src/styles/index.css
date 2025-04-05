@@ -51,7 +51,7 @@ nav {
     gap: 0px;
     justify-content: space-between;
     max-height: 70vh;
-    overflow: scroll;
+    overflow:auto;
 }
 
 .link-img {
