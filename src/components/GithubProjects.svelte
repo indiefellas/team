@@ -10,7 +10,8 @@
                 <a href={data.html_url}>
                     <div class="reset link-item">
                         <h2 class="jua reset">{data.name}</h2>
-                        <p>{data.description}</p>
+                        <p class="reset">{data.description}</p>
+                        <p class="small reset">{data.language} - {data.stargazers_count} stars</p>
                     </div>
                 </a>
                 {/if}

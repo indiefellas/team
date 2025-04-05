@@ -4,6 +4,32 @@ import GithubProjects from "../components/GithubProjects.svelte";
 import "../styles/index.css";
 ---
 
+<script>
+	function observeElementVisibility(element: Element, callback: (isIntersecting) => void) {
+		const observer = new IntersectionObserver((entries) => {
+			entries.forEach((entry) => {
+				callback(entry.isIntersecting);
+			});
+		}, {
+			rootMargin: "0px",
+			threshold: 0.75
+		});
+		observer.observe(element);
+		return observer;
+	}
+
+	document.querySelectorAll('.sections section').forEach((el) => {
+		observeElementVisibility(el, (isIntersecting) => {
+			let ele = document.querySelector(`.${el.id}`)
+			if (isIntersecting) {
+				ele?.classList.add('active');
+			} else {
+				ele?.classList.remove('active');
+			}
+		})
+	})
+</script>
+
 <Layout>
 	<div class="sections">
 		<section id="top" class="container center">
@@ -51,24 +77,28 @@ import "../styles/index.css";
 		</section>
 		<nav class="jua">
 			<div class="container center row nav">
-				<a href="#top">
+				<a href="#top" class="top">
 					<div class="container main">
 						<p id="link-title" class="jua reset">
-							<span>i</span><span>n</span><span>d</span><span>i</span><span>e</span><span>f</span><span>e</span><span>l</span><span>l</span><span>a</span><span>s</span>
-						</p> 
+							<span>i</span><span>n</span><span>d</span><span
+								>i</span
+							><span>e</span><span>f</span><span>e</span><span
+								>l</span
+							><span>l</span><span>a</span><span>s</span>
+						</p>
 					</div>
 				</a>
-				<a href="#projects">
+				<a href="#projects" class="projects">
 					<div class="container">
 						<p id="link-title" class="jua reset">projects</p>
 					</div>
 				</a>
-				<a href="#about">
+				<a href="#about" class="about">
 					<div class="container">
 						<p id="link-title" class="jua reset">about</p>
 					</div>
 				</a>
-				<a href="#team">
+				<a href="#team" class="team">
 					<div class="container">
 						<p id="link-title" class="jua reset">team</p>
 					</div>
@@ -85,7 +115,7 @@ import "../styles/index.css";
 				/>
 			</div>
 			<h2 class="reset">the projects or smth idk</h2>
-			<div class="container row wrap center links projects">
+			<div class="container row wrap center links projs">
 				<GithubProjects client:only="svelte" />
 			</div>
 		</section>
