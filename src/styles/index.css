@@ -23,6 +23,35 @@ h2 {
     gap: 48px;
 }
 
+nav {
+    position: sticky;
+    margin: 0 auto;
+    top: 12px;
+}
+
+.nav {
+    font-size: 1.25rem;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.nav a.main {
+    padding-right: 32px;
+}
+
+.nav a {
+    gap: 6px;
+}
+
+.nav img {
+    height: 1.5rem;
+}
+
+.projects {
+    gap: 0px;
+    justify-content: space-between;
+}
+
 .link-img {
     height: 5em;
     object-fit: contain;
@@ -51,7 +80,7 @@ section {
     width: 100%;
     height: 100%;
     scroll-snap-type: both mandatory;
-    overflow: scroll;
+    overflow-y: scroll;
 }
 
 @keyframes backwards-scroll {
@@ -82,9 +111,13 @@ section {
         font-size: 1.25rem;
     }
 
+    .nav {
+        position:sticky;
+    }
+
     .links {
         margin-top: 24px;
-        gap: 4px;
+        gap: 12px;
     }
 
     .link-img {

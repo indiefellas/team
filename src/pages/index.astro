@@ -1,61 +1,124 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import GithubProjects from '../components/GithubProjects.svelte';
-import '../styles/index.css';
+import Layout from "../layouts/Layout.astro";
+import GithubProjects from "../components/GithubProjects.svelte";
+import "../styles/index.css";
 ---
 
 <Layout>
+	<div style="display:none">
+		<a href="/not-found">not found</a>
+	</div>
 	<div class="sections">
-		<section class="container center">
+		<section id="top" class="container center">
 			<div class="container row title-container">
 				<h1 id="title" class="jua reset title">indiefellas</h1>
-				<img aria-labelledby="title" src="/img/index_logo.svg" class="title-img" />
+				<img
+					aria-labelledby="title"
+					src="/img/index_logo.svg"
+					class="title-img"
+				/>
 			</div>
 			<h2 class="reset">indieweb devs with no idea what they're doing</h2>
 			<div class="container row links">
 				<a href="#projects">
 					<div class="container">
-						<img aria-labelledby="link-title" src="/img/projects.svg" class="link-img" />
+						<img
+							aria-labelledby="link-title"
+							src="/img/projects.svg"
+							class="link-img"
+						/>
 						<h2 id="link-title" class="jua reset">projects</h2>
 					</div>
 				</a>
 				<a href="#about">
 					<div class="container">
-						<img aria-labelledby="link-title" src="/img/about.svg" class="link-img" />
+						<img
+							aria-labelledby="link-title"
+							src="/img/about.svg"
+							class="link-img"
+						/>
 						<h2 id="link-title" class="jua reset">about</h2>
 					</div>
 				</a>
 				<a href="#team">
 					<div class="container">
-						<img aria-labelledby="link-title" src="/img/index_logo.svg" class="link-img" />
+						<img
+							aria-labelledby="link-title"
+							src="/img/index_logo.svg"
+							class="link-img"
+						/>
 						<h2 id="link-title" class="jua reset">team</h2>
 					</div>
 				</a>
 			</div>
 		</section>
+		<nav class="jua">
+			<div class="container center row nav">
+				<a href="#top">
+					<div class="container main">
+						<p id="link-title" class="jua reset">
+							<span>i</span><span>n</span><span>d</span><span>i</span><span>e</span><span>f</span><span>e</span><span>l</span><span>l</span><span>a</span><span>s</span>
+						</p> 
+					</div>
+				</a>
+				<a href="#projects">
+					<div class="container">
+						<p id="link-title" class="jua reset">projects</p>
+					</div>
+				</a>
+				<a href="#about">
+					<div class="container">
+						<p id="link-title" class="jua reset">about</p>
+					</div>
+				</a>
+				<a href="#team">
+					<div class="container">
+						<p id="link-title" class="jua reset">team</p>
+					</div>
+				</a>
+			</div>
+		</nav>
 		<section id="projects" class="container center">
 			<div class="container row title-container">
 				<h1 id="title" class="jua reset title">projects</h1>
-				<img aria-labelledby="title" src="/img/projects.svg" class="title-img" />
+				<img
+					aria-labelledby="title"
+					src="/img/projects.svg"
+					class="title-img"
+				/>
 			</div>
 			<h2 class="reset">the projects or smth idk</h2>
-			<div class="container row wrap center links">
+			<div class="container row wrap center links projects">
 				<GithubProjects client:only="svelte" />
 			</div>
 		</section>
 		<section id="about" class="container center">
 			<div class="container row title-container">
 				<h1 id="title" class="jua reset title">about</h1>
-				<img aria-labelledby="title" src="/img/about.svg" class="title-img" />
+				<img
+					aria-labelledby="title"
+					src="/img/about.svg"
+					class="title-img"
+				/>
 			</div>
-			<h2 class="reset max">indiefellas is a group of  developers creating indie projects for indie developers. we house many projects like deploy2nekoweb, jAPI, and many more.</h2>
+			<h2 class="reset max">
+				indiefellas is a group of developers creating indie projects for
+				indie developers. we house many projects like deploy2nekoweb,
+				jAPI, and many more.
+			</h2>
 		</section>
 		<section id="team" class="container center">
 			<div class="container row title-container">
 				<h1 id="title" class="jua reset title">team</h1>
-				<img aria-labelledby="title" src="/img/index_logo.svg" class="title-img" />
+				<img
+					aria-labelledby="title"
+					src="/img/index_logo.svg"
+					class="title-img"
+				/>
 			</div>
-			<h2 class="reset max">indieweb devs with no idea what they're doing</h2>
+			<h2 class="reset max">
+				indieweb devs with no idea what they're doing
+			</h2>
 		</section>
 	</div>
 </Layout>

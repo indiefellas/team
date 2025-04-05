@@ -7,7 +7,7 @@
         {:then json}
             {#each json as data}
                 {#if data.name !== ".github" && data.description}
-                <a href={data.url}>
+                <a href={data.html_url}>
                     <div class="reset link-item">
                         <h2 class="jua reset">{data.name}</h2>
                         <p>{data.description}</p>
