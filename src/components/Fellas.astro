@@ -1,0 +1,22 @@
+---
+import f from '../assets/fellas'
+import fs from 'node:fs'
+
+let svgs = f.map(({name}) => {
+    return {
+        name,
+        svg: fs.readFileSync(`./public/img/fellas/${name}.svg`, 'utf-8')
+    }
+})
+---
+
+{
+    f.map((fella) => <a href={fella.links[0].url}>
+        <div class="reset link-item fella-item">
+            <div class="fella-img" set:html={svgs.find(({name}) => name === fella.name)?.svg}>
+            </div>
+            <h2 class="jua reset">{fella.name}</h2>
+            <p class="reset">{fella.description}</p>
+        </div>
+    </a>)
+}

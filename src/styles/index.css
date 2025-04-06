@@ -26,7 +26,10 @@ h2 {
 nav {
     position: sticky;
     margin: 0 auto;
-    top: 12px;
+    top: 0;
+    padding: 12px;
+
+    background-image: linear-gradient(var(--bg), var(--bg2));
 }
 
 .nav {
@@ -66,7 +69,12 @@ nav {
 }
 
 .fella-img {
+    margin: 0 auto;
+}
+
+.fella-img, .fella-img svg {
     width: 4rem;
+    height: auto;
 }
 
 .max { 
