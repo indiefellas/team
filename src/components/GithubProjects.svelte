@@ -23,3 +23,11 @@
 {:catch error}
     <p>Cannot get repo data. {error}</p>
 {/await}
+
+<noscript>
+    <h2 class="reset">
+        Unfortunately, this requires JavaScript.
+        But, you can visit our <a href="https://github.com/orgs/indiefellas/repositories">GitHub page</a>
+        to see our projects.
+    </h2>
+</noscript>
