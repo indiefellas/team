@@ -64,7 +64,8 @@ nav {
 }
 
 .link-item {
-    max-width: 364px;
+    max-width: 300px;
+    width: 300px;
     padding: 12px;
 }
 
