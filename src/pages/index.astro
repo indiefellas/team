@@ -118,6 +118,15 @@ import "../styles/index.css";
 			<h2 class="reset">the projects or smth idk</h2>
 			<div class="container row wrap center links projs">
 				<GithubProjects client:only="svelte" />
+				<div is:raw>
+					<noscript>
+						<h2 class="reset">
+							Unfortunately, this requires JavaScript.<br />
+							But, you can visit our <a href="https://github.com/orgs/indiefellas/repositories">GitHub page</a>
+							to see our projects.
+						</h2>
+					</noscript>
+				</div>
 			</div>
 		</section>
 		<section id="about" class="container center">
