@@ -1,6 +1,7 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import GithubProjects from "../components/GithubProjects.svelte";
+import Fellas from '../components/Fellas.svelte';
 import "../styles/index.css";
 ---
 
@@ -144,8 +145,11 @@ import "../styles/index.css";
 				/>
 			</div>
 			<h2 class="reset max">
-				indieweb devs with no idea what they're doing
+				the fellas who made this happen
 			</h2>
+			<div class="container row wrap center links projs">
+				<Fellas />
+			</div>
 		</section>
 	</div>
 </Layout>

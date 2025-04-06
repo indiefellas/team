@@ -1,0 +1,52 @@
+[
+    {
+        "name": "poyo",
+        "description": "",
+        "links": [
+            {
+                "label": "website",
+                "url": "https://poyo.study"
+            }
+        ]
+    },
+    {
+        "name": "maxpixels",
+        "description": "",
+        "links": [
+            {
+                "label": "website",
+                "url": "https://maxpixels.moe"
+            }
+        ]
+    },
+    {
+        "name": "jbcarreon123",
+        "description": "a developer that does things",
+        "links": [
+            {
+                "label": "website",
+                "url": "https://jbcarreon123.nekoweb.org"
+            }
+        ]
+    },
+    {
+        "name": "thinliquid",
+        "description": "",
+        "links": [
+            {
+                "label": "website",
+                "url": "https://thinliquid.dev"
+            }
+        ]
+    },
+    {
+        "name": "ivory willows",
+        "description": "lab experiment escapee",
+        "links": [
+            {
+                "label": "website",
+                "url": "https://ivrry.nekoweb.org"
+            }
+        ]
+    }
+]
