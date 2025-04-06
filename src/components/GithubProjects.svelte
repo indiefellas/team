@@ -6,7 +6,7 @@
             <p>Loading JSON...</p>
         {:then json}
             {#each json as data}
-                {#if data.name !== ".github" && data.description}
+                {#if data.name !== ".github" && data.description && (data.topics.length == 0 || !data.topics.includes('indiefellas-site-wip'))}
                 <a href={data.html_url}>
                     <div class="reset link-item">
                         <h2 class="jua reset">{data.name}</h2>
