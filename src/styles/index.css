@@ -64,13 +64,22 @@ nav {
 }
 
 .link-item {
-    max-width: 300px;
-    width: 300px;
+    max-width: 320px;
+    width: 320px;
     padding: 12px;
 }
 
 .fella-img {
     margin: 0 auto;
+}
+
+.fella-name {
+    justify-content: center;
+}
+
+.fella-button {
+    padding-left: 8px;
+    object-fit: contain;
 }
 
 .fella-img, .fella-img svg {

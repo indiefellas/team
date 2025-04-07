@@ -10,8 +10,10 @@ let svgs = f.map(({name}) => {
 })
 ---
 
+<div class="btn-hover" style="display:none"></div>
+
 {
-    f.map((fella) => <a href={fella.links[0].url}>
+    f.map((fella) => <a class="neko" href={fella.links[0].url}>
         <div class="reset link-item fella-item">
             <div class="fella-img" set:html={svgs.find(({name}) => name === fella.name)?.svg}>
             </div>
@@ -20,3 +22,7 @@ let svgs = f.map(({name}) => {
         </div>
     </a>)
 }
+
+<script>
+
+</script>
