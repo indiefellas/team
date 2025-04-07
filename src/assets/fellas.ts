@@ -7,7 +7,8 @@ export default [
                 "label": "website",
                 "url": "https://poy.ooo"
             }
-        ]
+        ],
+        "role": "the mastermind, backend and frontend"
     },
     {
         "name": "maxpixels",
@@ -18,7 +19,8 @@ export default [
                 "url": "https://maxpixels.moe"
             }
         ],
-        "button": "https://max.nekoweb.org/images/button.png"
+        "button": "https://max.nekoweb.org/images/button.png",
+        "role": "head designer, and frontend"
     },
     {
         "name": "jbcarreon123",
@@ -29,7 +31,8 @@ export default [
                 "url": "https://jbcarreon123.nekoweb.org"
             }
         ],
-        "button": "https://jbcarreon123.nekoweb.org/sitebuttonv2.png"
+        "button": "https://jbcarreon123.nekoweb.org/sitebuttonv2.png",
+        "role": "frontend, backend, and design"
     },
     {
         "name": "thinliquid",
@@ -40,7 +43,8 @@ export default [
                 "url": "https://thinliquid.dev"
             }
         ],
-        "button": "https://thinliquid.dev/thnlqd.png"
+        "button": "https://thinliquid.dev/thnlqd.png",
+        "role": "backend, frontend, and design"
     },
     {
         "name": "ivory willows",
@@ -51,7 +55,8 @@ export default [
                 "url": "https://ivrry.nekoweb.org"
             }
         ],
-        "button": "https://ivrry.nekoweb.org/assets/images/button.png"
+        "button": "https://ivrry.nekoweb.org/assets/images/button.png",
+        "role": "backend, frontend, and design"
     },
     {
         "name": "reduxflakes",
@@ -62,6 +67,18 @@ export default [
                 "url": "https://reduxflakes.nekoweb.org/"
             }
         ],
-        "button": "https://reduxflakes.nekoweb.org/public/img/buttons/reduc_anim.gif"
+        "button": "https://reduxflakes.nekoweb.org/public/img/buttons/reduc_anim.gif",
+        "role": "design and frontend"
+    },
+    {
+        "name": "june layercake",
+        "description": "the guy who's kind of a Project Manager",
+        "links": [
+            {
+                "label": "website",
+                "url": "https://layercake.nekoweb.org"
+            }
+        ],
+        "role": "kinda project manager"
     }
 ]

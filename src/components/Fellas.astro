@@ -10,19 +10,37 @@ let svgs = f.map(({name}) => {
 })
 ---
 
-<div class="btn-hover" style="display:none"></div>
-
-{
-    f.map((fella) => <a class="neko" href={fella.links[0].url}>
-        <div class="reset link-item fella-item">
-            <div class="fella-img" set:html={svgs.find(({name}) => name === fella.name)?.svg}>
+<h2 class="reset max">
+    the {f.length} fellas who made this happen
+</h2>
+<div class="container row wrap center links projs">
+    {
+        f.map((fella) => <a class="neko" href={fella.links[0].url} data-role={fella.role}>
+            <div class="reset link-item fella-item">
+                <div class="fella-img" set:html={svgs.find(({name}) => name === fella.name)?.svg}>
+                </div>
+                <h2 class="jua reset">{fella.name}</h2>
+                <p class="reset">{fella.description}</p>
             </div>
-            <h2 class="jua reset">{fella.name}</h2>
-            <p class="reset">{fella.description}</p>
-        </div>
-    </a>)
-}
+        </a>)
+    }
+</div>
 
 <script>
-
+    let el = document.querySelector('.neko-role');
+    document.querySelectorAll('.neko').forEach((em) => {
+        let e = em;
+        e.addEventListener('mouseenter', (ev) => {
+            el.textContent = e.dataset.role ?? '';
+            el.style.display = 'block';
+        })
+        e.addEventListener('mousemove', (ev) => {
+            el.style.setProperty('--x', `${ev.clientX + 15}px`)
+            el.style.setProperty('--y', `${ev.clientY + 15}px`)
+        })
+        e.addEventListener('mouseleave', (ev) => {
+            el.style.display = 'none';
+        })
+        console.log(em)
+    })
 </script>

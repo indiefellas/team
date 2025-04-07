@@ -64,9 +64,19 @@ nav {
 }
 
 .link-item {
-    max-width: 320px;
-    width: 320px;
+    width: 300px;
     padding: 12px;
+}
+
+.neko-role {
+    position: fixed;
+    top: var(--y);
+    left: var(--x);
+    padding: 6px;
+    background-color: var(--bg);
+    border: 1px solid var(--green);
+    z-index: 9999;
+    transition: none;
 }
 
 .fella-img {
