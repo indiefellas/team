@@ -32,7 +32,11 @@ let svgs = f.map(({name}) => {
         let e = em;
         e.addEventListener('mouseenter', (ev) => {
             el.textContent = e.dataset.role ?? '';
-            el.style.display = 'block';
+            el.style.display = e.dataset.role? 'block' : 'none';
+        })
+        e.addEventListener('click', (ev) => {
+            el.textContent = e.dataset.role ?? '';
+            setTimeout(() => {el.textContent = e.dataset.role ?? '';}, 2600)
         })
         e.addEventListener('mousemove', (ev) => {
             el.style.setProperty('--x', `${ev.clientX + 15}px`)
