@@ -144,9 +144,12 @@ import "../styles/index.css";
 				jAPI, and many more.
 			</h2>
 			<div class="container center">
-				<p class="reset button-text">Love our work? Grab our button! <span class="small subtitle">(hotlinking okay!)</span></p>
-				<img src="/img/indiefellas.svg" alt="indiefellas" class="button">
-				<textarea class="button-embed" readonly is:raw><a href="https://team.indieseas.net"><img src="https://team.indieseas.net/img/indiefellas.svg" alt="indiefellas" class="button"></a></textarea>
+				<p class="reset button-text">Love our work? Grab our button!</p>
+				<p class="reset button-subtitle"><span class="small subtitle">(hotlinking okay!, click the button to copy!)</span></p>
+				<img onclick='navigator.clipboard.writeText(`<a href="https://team.indieseas.net"><img src="https://team.indieseas.net/img/indiefellas.svg" alt="indiefellas" class="button"></a>`).then((()=>{console.log(`clipboard successfully set`)}),(()=>{console.error(`clipboard write failed`)}));' src="/img/indiefellas.svg" alt="indiefellas" class="button">
+				<noscript>
+					<textarea id="button-embed" class="button-embed" readonly is:raw><a href="https://team.indieseas.net"><img src="https://team.indieseas.net/img/indiefellas.svg" alt="indiefellas" class="button"></a></textarea>
+				</noscript>
 			</div>
 		</section>
 		<section id="team" class="container center">
