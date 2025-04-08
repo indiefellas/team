@@ -18,6 +18,19 @@ h2 {
     font-weight: normal;
 }
 
+.button-text {
+    padding-top: 24px;
+    padding-bottom: 6px;
+}
+
+.button-embed {
+    padding: 8px;
+    background-color: var(--bg);
+    color: var(--text);
+    width: fit-content;
+    height: fit-content;
+}
+
 .links {
     margin-top: 32px;
     gap: 48px;
@@ -113,6 +126,12 @@ section {
 
 .sections > section {
     scroll-snap-align: center;
+}
+
+img.button { 
+    width: 88px;
+    height: 31px;
+    padding-bottom: 8px;
 }
 
 .sections {
