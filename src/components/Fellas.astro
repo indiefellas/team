@@ -26,16 +26,25 @@ let svgs = f.map(({name}) => {
     }
 </div>
 
-<script>
+<script is:inline>
     let el = document.querySelector('.neko-role');
+    let i = 0
     document.querySelectorAll('.neko').forEach((em) => {
+        if (i % 2 == 0) {
+            em.dataset.color = 'var(--blue)'
+        } else {
+            em.dataset.color ='var(--green)'
+        }
+        i++;
         let e = em;
         e.addEventListener('mouseenter', (ev) => {
             el.textContent = e.dataset.role ?? '';
+            el.style.setProperty('--color', em.dataset.color)
             el.style.display = e.dataset.role? 'block' : 'none';
         })
         e.addEventListener('click', (ev) => {
             el.textContent = e.dataset.role ?? '';
+            el.style.setProperty('--color', em.dataset.color)
             setTimeout(() => {el.textContent = e.dataset.role ?? '';}, 2600)
         })
         e.addEventListener('mousemove', (ev) => {
