@@ -79,6 +79,6 @@ export default [
                 "url": "https://layercake.nekoweb.org"
             }
         ],
-        "role": "kinda project manager, and also design"
+        "role": "project manager-ish, and design"
     }
 ]
