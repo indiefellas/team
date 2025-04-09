@@ -1,4 +1,4 @@
-# team.indieseas.org
+# team.indieseas.net
 The website for Indiefellas.
 
 ## Development
